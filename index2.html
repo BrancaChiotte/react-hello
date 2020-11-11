@@ -18,13 +18,32 @@
 
     <!-- JAVASCRIPT -->
     <script type="text/babel">
-      // RENDER REACT TO THE DOM - WILL ACCEPT TWO ARGUMENTS (REACT WHAT, REACT WHERE)
-      ReactDOM.render(
-        //   // REACT WHAT - JSX
-        <h1>Hello World</h1>,
-        //   // REACT WHERE - DIV WITH ID OF "APP"
-        document.getElementById("app")
+
+    // ASSIGNMENT - CHALLENGE
+      // RENDER A PARAGRAPH TAG WITH THE CONTENT "I AM A PARAGRAPH!"
+      // RENDER AN ANCHOR TAG THAT LINKS TO GOOGLE WITH THE CONTENT "VISIT GOOGLE"
+      // RENDER AN UNORDERED LIST WITH THREE LIST ITEMS YOU NEED TO DO TODAY
+
+      // ReactDOM.render(
+      //   <p> I am a paragrah!</p>,
+      // document.getElementById("app")
+      // );
+
+
+      // ReactDOM.render(
+      //   <a href="www.google.com">Visit Google</a>,
+      // document.getElementById("app")
+      // );
+
+       ReactDOM.render(
+        <ul>
+          <li> Need to do one thing</li>
+          <li> Need to do two things</li>
+          <li> Need to do three things</li>
+        </ul>,
+      document.getElementById("app")
       );
+
     </script>
   </body>
 </html>

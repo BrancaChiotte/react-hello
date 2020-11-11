@@ -18,13 +18,31 @@
 
     <!-- JAVASCRIPT -->
     <script type="text/babel">
-      // RENDER REACT TO THE DOM - WILL ACCEPT TWO ARGUMENTS (REACT WHAT, REACT WHERE)
-      ReactDOM.render(
-        //   // REACT WHAT - JSX
-        <h1>Hello World</h1>,
-        //   // REACT WHERE - DIV WITH ID OF "APP"
-        document.getElementById("app")
-      );
+    //  ReactDOM.render(React.createElement(
+    //   "h1",
+    //   null,
+    //   "Hello World"
+    //   ),
+    //   document.getElementById("app")
+    // );
+
+//  NETSED JSX
+    ReactDOM.render(
+      React.createElement(
+      "div",
+      null,
+      React.createElement(
+        "h1",
+        null,
+        "One JSX element"),
+      React.createElement(
+        "h2",
+        null,
+        "Two JSX element")
+        ),
+      document.getElementById("app")
+    );
+
     </script>
   </body>
 </html>

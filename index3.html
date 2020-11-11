@@ -18,13 +18,23 @@
 
     <!-- JAVASCRIPT -->
     <script type="text/babel">
-      // RENDER REACT TO THE DOM - WILL ACCEPT TWO ARGUMENTS (REACT WHAT, REACT WHERE)
-      ReactDOM.render(
-        //   // REACT WHAT - JSX
-        <h1>Hello World</h1>,
-        //   // REACT WHERE - DIV WITH ID OF "APP"
-        document.getElementById("app")
-      );
+
+    // CREATE VARIABLES FOR JSX AND FOR LOCATION
+
+      // VARIABLE FOR JSX
+      var hello = <h1>Hello World</h1>;
+
+      // VARIABLE FOR LOCATION
+      var destination = document.getElementById("app");
+
+    // RENDER REACT TO THE DOM - WILL ACCEPT TWO ARGUMENTS (REACT WHAT, REACT WHERE)
+    ReactDOM.render(
+      // REACT WHAT - VARIABLE FOR JSX
+      hello,
+      // REACT WHERE - VARIABLE FOR DIV WITH ID OF "APP"
+      destination
+    );
+
     </script>
   </body>
 </html>
