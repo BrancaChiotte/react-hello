@@ -16,17 +16,37 @@
     <script type="text/babel">
 
     // CREATE OUR FIRST CLASS COMPONENT
-    class Shapes extends React.Component {
+    class Circle extends React.Component {
       render() {
         return(
-          <h1>Circle, Square, Rectangle</h1>
+          <h1>Circle</h1>
+        );
+      }
+    }
+
+    class Square extends React.Component {
+      render() {
+        return (
+          <h1>Square</h1>
+        );
+      }
+    }
+
+    class Rectangle extends React.Component {
+      render() {
+        return (
+          <h1>Rectangle</h1>
         );
       }
     }
 
     ReactDOM.render(
       // REACT WHAT, REACT WHERE
-      <Shapes/>,
+      <div>
+        <Circle/>
+        <Square/>
+        <Rectangle/>
+      </div>,
       document.getElementById("app")
     );
 

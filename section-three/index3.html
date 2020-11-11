@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
     <!-- BABEL LIBRARY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <link rel="stylesheet" href="main2.css">
     <title>Class Components</title>
   </head>
   <body>
@@ -16,17 +17,37 @@
     <script type="text/babel">
 
     // CREATE OUR FIRST CLASS COMPONENT
-    class Shapes extends React.Component {
+    class Circle extends React.Component {
       render() {
         return(
-          <h1>Circle, Square, Rectangle</h1>
+          <h1 className="circle">Circle</h1>
+        );
+      }
+    }
+
+    class Square extends React.Component {
+      render() {
+        return (
+          <h1 className="square">Square</h1>
+        );
+      }
+    }
+
+    class Rectangle extends React.Component {
+      render() {
+        return (
+          <h1 className="rectangle">Rectangle</h1>
         );
       }
     }
 
     ReactDOM.render(
       // REACT WHAT, REACT WHERE
-      <Shapes/>,
+      <div>
+        <Circle/>
+        <Square/>
+        <Rectangle/>
+      </div>,
       document.getElementById("app")
     );
 
