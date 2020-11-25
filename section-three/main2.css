@@ -1,17 +1,18 @@
 .circle {
-  height: 50px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   background-color: red;
+  border-radius: 50%;
 }
 
 .square {
-  height: 50px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   background-color: red;
 }
 
 .rectangle {
-  height: 50px;
-  width: 150px;
+  height: 100px;
+  width: 200px;
   background-color: red;
 }
