@@ -15,7 +15,19 @@
     <div id="app">React has not rendered yet</div>
     <script type="text/babel">
 
-    // CREATE OUR FIRST CLASS COMPONENT
+    // Challenge - Create a complex Shapes component pasing into it Circle, Square, Rectangle,..
+    class Shapes extends React.Component {
+      render() {
+          return(
+            <div>
+              <Circle/>
+              <Square/>
+              <Rectangle/>
+            </div>
+        );
+      }
+    }
+
     class Circle extends React.Component {
       render() {
         var circleStyle = {
@@ -62,11 +74,7 @@
 
     ReactDOM.render(
       // REACT WHAT, REACT WHERE
-      <div>
-        <Circle/>
-        <Square/>
-        <Rectangle/>
-      </div>,
+      <Shapes/>,
       document.getElementById("app")
     );
 
